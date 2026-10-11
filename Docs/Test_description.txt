@@ -1,0 +1,27 @@
+Team 23 - Test Description File
+
+This directory contains 6 comprehensive sample input files designed to push the DES engine through various edge cases, non-trivial scenarios, and all bonus features.
+
+* File1_Cancel.txt (50 Actions)
+  Scenario Focus: Clear illustration of Cancellation.
+  Description: Floods the system with OVC (Delivery) orders and strategically issues 'X' (Cancel) commands at various time intervals to test the CancellableQueue pointer logic while orders are pending, cooking, and ready.
+
+* File2_Tables.txt (100 Actions)
+  Scenario Focus: Dine-in & Table Best-Fit Allocation.
+  Description: A heavy influx of ODG and ODN orders with varying seat requirements to test the Best-Fit Table allocation and seat-sharing (Y/N) logic.
+
+* File3_Overwait.txt (150 Actions)
+  Scenario Focus: Overwait Priority Threshold (Bonus 1).
+  Description: Spawns massive amounts of OVG (VIP Delivery) orders but heavily restricts scooter availability. Forces orders to wait past the 10-tick threshold to test priority elevation to the overwaitOVG queue.
+
+* File4_Rescue.txt (200 Actions)
+  Scenario Focus: Rescue Scooter Dispatch (Bonus 2).
+  Description: Sends normal delivery orders on extremely long distances (8000m+) to maximize the 2% breakdown probability, testing the Rescue Scooter dispatch and dynamic meeting time math.
+
+* File5_Combo.txt (250 Actions)
+  Scenario Focus: VIP COMBO Starvation Locks (Bonus 3).
+  Description: Injects massive OCOMBO orders requiring multiple chefs and scooters simultaneously, testing the "VIP Halt" locks to ensure normal orders cannot steal resources from waiting COMBOs.
+
+* File6_Chaos.txt (300 Actions)
+  Scenario Focus: The Ultimate Stress Test.
+  Description: THIS FILE TESTS THE MOST SCENARIOS. It is a complete blend of every order type, cancellations, COMBOs, breakdowns, and table sharing to push the engine to its absolute limit simultaneously.

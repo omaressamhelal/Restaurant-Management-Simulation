@@ -1,0 +1,10 @@
+Final timestep: 1
+
+TF	ID	TQ	TA	TR	TS	Ti	Tc	Tw	Tserv
+
+--- Statistics ---
+1. Total orders: 0  Served: 0  Cancelled: 0
+2. Total chefs: 0  (CN=0, CS=0)
+3. Total scooters: 0
+7. Scooters available at end: 0/0
+8. Chefs free at end: 0/0
